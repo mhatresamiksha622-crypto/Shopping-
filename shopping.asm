@@ -1,0 +1,15 @@
+ORG 0000H
+
+START:
+    MOV A, #20H
+    MOV R0, A
+
+    MOV A, #30H
+    ADD A, R0
+
+    MOV 40H, A
+
+HERE:
+    SJMP HERE
+
+END
