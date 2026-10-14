@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🛍️ Smart Shopping Cart</h1>
+    <p>Welcome to Smart Shopping!</p>
+
+    <div class="product">
+        <h3>Product 1</h3>
+        <p>Price: ₹200</p>
+        <button onclick="addItem(200)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Product 2</h3>
+        <p>Price: ₹300</p>
+        <button onclick="addItem(300)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Product 3</h3>
+        <p>Price: ₹150</p>
+        <button onclick="addItem(150)">Add to Cart</button>
+    </div>
+
+    <div class="bill">
+        <h2>Shopping Bill</h2>
+        <p>Items: <span id="count">0</span></p>
+        <p>Total: ₹<span id="total">0</span></p>
+        <p>Discount: ₹<span id="discount">0</span></p>
+        <h3>Final Bill: ₹<span id="final">0</span></h3>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="resetCart()">Reset Cart</button>
+    </div>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
